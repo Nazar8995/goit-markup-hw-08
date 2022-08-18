@@ -1,0 +1,23 @@
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+  padding: 195px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Img\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  &__title {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: auto;
+    width: 650px;
+  }
+}
