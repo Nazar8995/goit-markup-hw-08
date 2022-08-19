@@ -28,11 +28,21 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 
 .header {
   background-color: var(--primary-bg-color);
   padding: 24px 0px 25px;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0%;
+  }
 }
 .header__container {
   display: flex;
@@ -49,11 +59,21 @@ body {
   letter-spacing: 3%;
   color: #2196f3;
 }
+@media screen and (max-width: 480px) {
+  .header__link {
+    margin: 16px 0px 16px 15px;
+  }
+}
 .header__link--span {
   color: #000;
   margin-right: 93px;
 }
 
+@media screen and (max-width: 480px) {
+  .header__nav {
+    display: none;
+  }
+}
 .header__nav-item:not(last-child) {
   margin-right: 50px;
 }
@@ -112,6 +132,11 @@ body {
 .header__contact {
   display: flex;
   margin-left: auto;
+}
+@media screen and (max-width: 480px) {
+  .header__contact {
+    display: none;
+  }
 }
 .header__contact-mail {
   color: #757575;
@@ -210,6 +235,13 @@ body {
   background-position: center;
   height: 600px;
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+    padding: 118px 60px;
+  }
+}
 .hero__title {
   color: #fff;
   font-family: Roboto, sans-serif;
@@ -222,6 +254,14 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 650px;
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    width: 480px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .backdrop {
