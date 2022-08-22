@@ -141,10 +141,21 @@ body {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-right: auto;
+  margin-left: auto;
+  min-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .header {
@@ -477,13 +488,13 @@ body {
   margin-top: 20px;
 }
 
-.sub__mailing {
+.footer__mailing {
   margin-top: 35px;
   margin-left: 92px;
   display: flex;
   flex-direction: column;
 }
-.sub__mailing-title {
+.footer__mailing-title {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -493,10 +504,10 @@ body {
   padding-bottom: 20px;
   color: #ffffff;
 }
-.sub__mailing-form {
+.footer__mailing-form {
   display: flex;
 }
-.sub__mailing-form input {
+.footer__mailing-form input {
   width: 358px;
   background-color: #2f303a;
   height: 50px;
@@ -508,10 +519,10 @@ body {
   outline: 0;
 }
 
-.sub__form {
+.footer__mailing-button {
   display: flex;
 }
-.sub__form-button-submit {
+.footer__mailing-button-submit {
   color: #fff;
   background-color: #2196f3;
   font-family: Roboto, sans-serif;
@@ -532,11 +543,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-.sub__form:hover {
+.footer__mailing-button:hover {
   background-color: #188ce8;
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sub__form-icon {
+.footer__mailing-button-icon {
   fill: #fff;
   margin-left: 10px;
 }/*# sourceMappingURL=portfolio.css.map */

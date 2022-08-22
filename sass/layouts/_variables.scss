@@ -20,12 +20,16 @@ body {
   margin-bottom: 94px;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-right: auto;
+  margin-left: auto;
+  min-width: 480px;
 
-  @media screen and (max-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1140px) {
+    max-width: 1200px;
   }
 }
