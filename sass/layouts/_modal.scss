@@ -9,6 +9,7 @@
   visibility: visible;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -27,6 +28,13 @@ textarea {
   min-width: 528px;
   background-color: #fff;
   border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   &-title {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -59,6 +67,7 @@ textarea {
   .form {
     width: 528px;
     height: 581px;
+
     &__field {
       display: flex;
       flex-direction: column;
@@ -72,6 +81,7 @@ textarea {
       padding-right: 40px;
       position: relative;
       text-align: left;
+
       &:not(:last-child) {
         margin-bottom: 10px;
       }

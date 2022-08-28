@@ -3,8 +3,15 @@
   margin-top: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
   &__title {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 36px;
     line-height: 1.16;
@@ -13,10 +20,38 @@
     letter-spacing: 3%;
     text-align: center;
     margin-bottom: 50px;
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 30px;
+      padding-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
   }
   &__list {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1140px) {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
   &__subtitle {
     color: var(--title-text-color);
@@ -46,6 +81,39 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: #fff;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+      &:nth-child(4) {
+        margin: 0;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+
+      text-align: center;
+
+      &:nth-child(1) {
+        margin-right: 30px;
+      }
+      &:nth-child(3) {
+        margin-right: 30px;
+      }
+    }
+    @media screen and (max-width: 1139px) {
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 1140px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
   &__social-list {
     display: flex;
