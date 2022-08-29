@@ -1,15 +1,22 @@
 .features {
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width:480px) {
+    padding-bottom: 0;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 1140px) {
-    margin-top: 113px;
-    margin-bottom: 94px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 94px;
+  }
+  &-items {
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
   }
   &__title {
     display: none;
