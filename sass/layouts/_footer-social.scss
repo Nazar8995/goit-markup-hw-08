@@ -1,5 +1,13 @@
 .footer__social {
-  margin-left: 70px;
+  // margin-left: 70px;
+  @media screen and(max-width:767px) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
   &-icon {
     fill: #fff;
   }
@@ -22,16 +30,16 @@
     }
   }
   &-title {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 0.8;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    height: 16px;
-    justify-content: center;
     color: #fff;
+
     @media screen and (max-width: 767px) {
       margin-top: 60px;
     }
@@ -42,17 +50,20 @@
 
   &-list {
     display: flex;
-    @media screen and (min-width: 480px) {
-      justify-content: center;
-      margin-top: 20px;
-    }
+    // @media screen and (min-width: 480px) {
+    //   justify-content: center;
+    //   margin-top: 20px;
+    // }
     @media screen and (min-width: 768px) {
       justify-content: center;
-      margin-top: 20px;
+      // margin-top: 20px;
     }
     @media screen and (min-width: 1140px) {
       margin-right: 93px;
-      margin-top: 20px;
+      // margin-top: 20px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 10px;
     }
   }
 }
