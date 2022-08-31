@@ -5,6 +5,9 @@
   @media screen and (max-width: 480px) {
     padding: 0%;
   }
+  @media screen and(max-width:767px) {
+    display: none;
+  }
   @media screen and(max-width:1139px) {
     padding: 26px 0px 26px;
   }
