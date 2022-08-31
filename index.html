@@ -53,6 +53,7 @@
             </li>
           </ul>
         </div>
+        <div class="mobile-header"></div>
       </header>
     </div>
     <main>
@@ -452,16 +453,18 @@
           <div class="footer__mailing-form">
             <p class="footer__mailing-title">Подпишитесь на рассылку</p>
 
-            <label class="footer__mailing-field" for="form-email"></label>
-            <input type="email" name="email" id="form-email" placeholder="E-mail" />
+            <div class="footer__mailing-list">
+              <label class="footer__mailing-field" for="form-email"></label>
+              <input type="email" name="email" id="form-email" placeholder="E-mail" />
 
-            <div class="footer__mailing-button">
-              <button class="footer__mailing-button-submit" type="submit">
-                Подписаться
-                <svg class="footer__mailing-button-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                </svg>
-              </button>
+              <div class="footer__mailing-button">
+                <button class="footer__mailing-button-submit" type="submit">
+                  Подписаться
+                  <svg class="footer__mailing-button-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </form>

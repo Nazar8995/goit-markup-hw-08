@@ -28,7 +28,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     color: #ffffff;
     @media screen and (max-width: 767px) {
       text-align: center;
@@ -40,11 +40,21 @@
 
     @media screen and (min-width: 1140px) {
       text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  &-list {
+    @media screen and (min-width: 1140px) {
+      display: flex;
+      align-items: baseline;
     }
   }
   &-form {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1140px) {
+      display: inline-block;
+    }
     @media screen and (max-width: 767px) {
       align-items: center;
     }

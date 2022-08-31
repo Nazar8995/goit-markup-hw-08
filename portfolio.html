@@ -62,14 +62,14 @@
       </header>
     </div>
     <main class="menu">
-      <div class="menu__card-filter">
+      <div class="menu__card-filter container">
         <button class="menu__card-button" type="button">Все</button>
         <button class="menu__card-button" type="button">Веб-сайты</button>
         <button class="menu__card-button" type="button">Приложения</button>
         <button class="menu__card-button" type="button">Дизайн</button>
         <button class="menu__card-button" type="button">Маркетинг</button>
       </div>
-      <div class="container__portf">
+      <div class="container">
         <section class="services">
           <h1 class="services__title">Услуги</h1>
           <ul class="services__list">
@@ -222,20 +222,22 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__adress">
           <a href="./index.html" class="footer__name"
             >Web<span class="footer__name--span">Studio</span></a
           >
 
           <address class="footer__address">
-            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="footer__address-item">
+              <a href="" class="footer__address-geo">г. Киев, пр-т Леси Украинки, 26</a>
+            </p>
             <ul class="footer__address-list">
               <li class="footer__address-item">
                 <a href="mailto:info@devstudio.com" class="footer__address-link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer__item">
+              <li class="footer__address-item">
                 <a href="tel:+380961111111" class="footer__address-link">+38 096 111 11 11</a>
               </li>
             </ul>
@@ -271,19 +273,22 @@
             </li>
           </ul>
         </div>
-        <form class="sub__mailing">
-          <p class="sub__mailing-title">Подпишитесь на рассылку</p>
-          <div class="sub__mailing-form">
-            <label for="email"></label>
-            <input class="email" type="email" name="email" id="email" placeholder="E-mail" />
+        <form class="footer__mailing">
+          <div class="footer__mailing-form">
+            <p class="footer__mailing-title">Подпишитесь на рассылку</p>
 
-            <div class="sub__form">
-              <button class="sub__form-button-submit" type="submit">
-                Подписаться
-                <svg class="sub__form-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                </svg>
-              </button>
+            <div class="footer__mailing-list">
+              <label class="footer__mailing-field" for="form-email"></label>
+              <input type="email" name="email" id="form-email" placeholder="E-mail" />
+
+              <div class="footer__mailing-button">
+                <button class="footer__mailing-button-submit" type="submit">
+                  Подписаться
+                  <svg class="footer__mailing-button-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </form>
