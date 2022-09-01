@@ -11,17 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    /> -->
+    
 
     <link rel="stylesheet" href="/css/portfolio.css" />
   </head>
   <body class="">
     
       <header class="header">
-        <div class="container">
         <div class="header__container">
           <a href="./index.html" class="header__link"
             >Web<span class="header__link--span">Studio</span></a
@@ -59,6 +55,77 @@
             </li>
           </ul>
         </div>
+        
+
+        <div class="container"><div class="header__mobile ">
+          <div class="header__mobile-nav">
+            <nav class="mobile__nav"><a href="./index.html" class="header__mobile-link"
+            >Web<span class="header__mobile-link--span">Studio</span></a>
+          <button type="button" class="mobile__nav-button" data-menu-button>
+            <svg
+              class="mobile__nav-icons"
+              width="40px"
+              height="40px"
+              aria-controls="mobile__nav-menu"
+              aria-expanded="false"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="mobile__nav-icons-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile__nav-menu" data-menu>
+            <button class="mobile__nav-menu-button" type="button" data-menu-close>
+              <svg
+                class="mobile__nav-icon"
+                width="40px"
+                height="40px"
+                aria-controls="mobile__nav-menu"
+                aria-expanded="false"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use class="mobile__nav-icons-close" href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            
+              <div class="mobile__group"><ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="./index.html" class="mobile__nav-link">Студия</a>
+                </li>
+
+                <li class="mobile__nav-item">
+                  <a href="./portfolio.html" class="mobile__nav-link-is-active">Портфолио </a>
+                </li>
+                <li class="mobile__nav-item"><a href="" class="mobile__nav-link">Контакты </a></li>
+              </ul>
+            </div>
+
+            <ul class="mobile__contact">
+              <li class="mobile__contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile__contact-mail">
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile__contact-item">
+                <a href="tel:+380961111111" class="mobile__contact-tel"> +38 096 111 11 11</a>
+              </li>
+            </ul>
+            <ul class="mobile__social">
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">Instagram</a>
+              </li>
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">Twitter</a>
+              </li>
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">Facebook</a>
+              </li>
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+        </nav>
       </header>
     </div>
     <main class="menu">
@@ -294,5 +361,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

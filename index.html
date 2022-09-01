@@ -53,51 +53,77 @@
             </li>
           </ul>
         </div>
-        <div class="header__mobile">
-          <div class="header__mobile container">
-            <a href="./index.html" class="header__mobile-link"
-              >Web<span class="header__mobile-link--span">Studio</span></a
+        
+
+        <div class="header__mobile ">
+          <div class="header__mobile-nav">
+            <nav class="mobile__nav"><a href="./index.html" class="header__mobile-link"
+            >Web<span class="header__mobile-link--span">Studio</span></a>
+          <button type="button" class="mobile__nav-button" data-menu-button>
+            <svg
+              class="mobile__nav-icons"
+              width="40px"
+              height="40px"
+              aria-controls="mobile__nav-menu"
+              aria-expanded="false"
+              aria-label="Переключатель мобильного меню"
             >
-
-            <nav class="header__nav">
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a href="./index.html" class="header__nav-link-is-active">Студия</a>
+              <use class="mobile__nav-icons-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile__nav-menu" data-menu>
+            <button class="mobile__nav-menu-button" type="button" data-menu-close>
+              <svg
+                class="mobile__nav-icon"
+                width="40px"
+                height="40px"
+                aria-controls="mobile__nav-menu"
+                aria-expanded="false"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use class="mobile__nav-icons-close" href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            
+              <div class="mobile__group"><ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="./index.html" class="mobile__nav-link-is-active">Студия</a>
                 </li>
 
-                <li class="header__nav-item">
-                  <a href="./portfolio.html" class="header__nav-link">Портфолио </a>
+                <li class="mobile__nav-item">
+                  <a href="./portfolio.html" class="mobile__nav-link">Портфолио </a>
                 </li>
-                <li class="header__nav-item"><a href="" class="header__nav-link">Контакты </a></li>
+                <li class="mobile__nav-item"><a href="" class="mobile__nav-link">Контакты </a></li>
               </ul>
-            </nav>
+            </div>
 
-            <ul class="header__contact">
-              <li class="header__contact-item">
-                <a href="mailto:info@devstudio.com" class="header__contact-mail">
+            <ul class="mobile__contact">
+              <li class="mobile__contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile__contact-mail">
                   info@devstudio.com</a
                 >
               </li>
-              <li class="header__contact-item">
-                <a href="tel:+380961111111" class="header__contact-tel"> +38 096 111 11 11</a>
+              <li class="mobile__contact-item">
+                <a href="tel:+380961111111" class="mobile__contact-tel"> +38 096 111 11 11</a>
               </li>
             </ul>
-            <ul class="list-social">
-              <li class="list-social__item">
-                <a class="list-social__link" href="">Instagram</a>
+            <ul class="mobile__social">
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">Instagram</a>
               </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">Twitter</a>
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">Twitter</a>
               </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">Facebook</a>
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">Facebook</a>
               </li>
-              <li class="list-social__item">
-                <a class="list-social__link" href="">LinkedIn</a>
+              <li class="mobile__social-item">
+                <a class="mobile__social-link" href="">LinkedIn</a>
               </li>
             </ul>
           </div>
-        </div>
+        </div> 
+        </nav>
       </header>
     </div>
     <main>
@@ -515,5 +541,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -5,11 +5,14 @@
   @media screen and (max-width: 480px) {
     padding: 0%;
   }
-  @media screen and(max-width:767px) {
-    display: none;
+  // @media screen and(max-width:767px) {
+  //   display: none;
+  // }
+  @media screen and(min-width:768px) {
+    padding: 26px 0px 21px;
   }
-  @media screen and(max-width:1139px) {
-    padding: 26px 0px 26px;
+  @media screen and(min-width:1139px) {
+    padding: 0;
   }
   &__container {
     font-family: 'Roboto', sans-serif;
@@ -23,14 +26,15 @@
     position: relative;
     @media screen and (max-width: 767px) {
       padding: 0;
+      display: none;
     }
-    @media screen and (max-width: 1139px) {
-      max-width: 768px;
-      display: flex;
-      // padding-top: 14px;
+    // @media screen and (max-width: 1139px) {
+    //   max-width: 768px;
+    //   display: flex;
+    //   // padding-top: 14px;
 
-      align-items: center;
-    }
+    //   align-items: center;
+    // }
 
     @media screen and (min-width: 1140px) {
       max-width: 1200px;
@@ -124,6 +128,13 @@
   // }
   @media screen and(max-width:1139px) {
     flex-direction: column;
+  }
+  &-item {
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
   &-mail {
     color: #757575;
