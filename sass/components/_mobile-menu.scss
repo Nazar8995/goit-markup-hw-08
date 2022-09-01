@@ -1,17 +1,26 @@
-.mobile__header {
+.header__mobile {
   @media screen and (max-width: 767px) {
-    width: 480px;
-    height: 60px;
+    // width: 480px;
+    // height: 60px;
+    // position: relative;
+    // background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    background-color: #fff;
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
 
   &-link {
-    @media screen and (max-width: 480px) {
-      margin: 16px 0px 16px 15px;
+    @media screen and (max-width: 767px) {
+      padding: 16px 0px 16px 15px;
     }
     font-weight: 400;
     font-family: Raleway, sans-serif;
