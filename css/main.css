@@ -471,6 +471,7 @@ body {
   opacity: 1;
   overflow-y: scroll;
   position: fixed;
+  z-index: 99999999999;
   padding-left: 40px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
