@@ -1,6 +1,9 @@
 .clients {
-  margin-bottom: 94px;
-
+  &__container {
+    @media screen and(min-width:1140px) {
+      margin-bottom: 94px;
+    }
+  }
   &__icon {
     fill: #afb1b8;
   }

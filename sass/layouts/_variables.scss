@@ -23,9 +23,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
-  width: 100%;
   margin-left: auto;
-  max-width: 480px;
+  min-width: 480px;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
