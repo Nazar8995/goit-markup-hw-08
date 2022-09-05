@@ -144,8 +144,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
+  width: 100%;
   margin-left: auto;
-  min-width: 480px;
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -836,7 +837,7 @@ body {
   margin-bottom: 20px;
   color: #2196f3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer__name {
     margin-top: 60px;
     margin-bottom: 0px;
@@ -845,6 +846,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer__name {
     display: flex;
+    margin-top: 60px;
     margin-left: 55px;
   }
 }
@@ -1058,7 +1060,7 @@ body {
   padding: 15px;
   height: 50px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer__mailing-form input {
     max-width: 100%;
     width: 450px;

@@ -38,8 +38,8 @@
   }
   &__item {
     @media screen and (max-width: 767px) {
-      margin-left: 5px;
-      margin-right: 5px;
+      // margin-left: 5px;
+      // margin-right: 5px;
       margin-bottom: 30px;
     }
     @media screen and (min-width: 768px) {
@@ -119,6 +119,7 @@
     font-style: normal;
     font-size: 14px;
     line-height: 16px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     @media screen and (max-width: 767px) {
       text-align: center;
