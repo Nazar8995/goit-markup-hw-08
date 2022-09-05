@@ -104,9 +104,19 @@ body {
   color: #000;
   margin-right: 93px;
 }
+@media screen and (min-width: 768px) {
+  .header__link--span {
+    margin-right: 88px;
+  }
+}
 
 .header__nav-item:not(last-child) {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .header__nav-item:last-child {
+    margin-right: 84px;
+  }
 }
 .header__nav-link:hover {
   color: #18a0fb;
@@ -1138,11 +1148,6 @@ textarea {
 .clients {
   margin-bottom: 94px;
 }
-@media screen and (max-width: 1139px) {
-  .clients {
-    margin-bottom: 60px;
-  }
-}
 .clients__icon {
   fill: #afb1b8;
 }
@@ -1186,6 +1191,8 @@ textarea {
   .clients__list {
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1248,7 +1255,7 @@ textarea {
   .clients__item {
     padding: 16px 60px;
     max-width: 226px;
-    width: 100%;
+    height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1275,6 +1282,13 @@ textarea {
   }
   .clients__item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .clients__container {
+    padding-left: 0;
+    margin-bottom: 60px;
   }
 }
 

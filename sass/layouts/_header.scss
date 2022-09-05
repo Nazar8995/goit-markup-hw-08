@@ -58,6 +58,9 @@
   &__link--span {
     color: #000;
     margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
   }
 }
 .header__nav {
@@ -66,6 +69,11 @@
   // }
   &-item:not(last-child) {
     margin-right: 50px;
+  }
+  &-item:last-child {
+    @media screen and(min-width:768px) {
+      margin-right: 84px;
+    }
   }
   &-link:hover {
     color: #18a0fb;
